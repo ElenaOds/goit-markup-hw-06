@@ -356,47 +356,80 @@
                         </li>
                     </ul>
                 </div>
+                <form class="from-subscribe">
+                    <b class="form-subscribe-title">Подпишитесь на рассылку</b>
+                        <div class="form-subscribe-field">
+                            <label for="name"></label>
+                            <input class="form-subscribe-input" type="email" placeholder="E-mail">
+                            <button type="submit" class="button-subscribe">Подписаться
+                                <svg class="send-icon" width="24px" height="24px">
+                                    <use href="./images/icons/icons.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
+                </form>
             </div>
       </footer>
 
       <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="close-window" data-modal-close>
-                <svg class="icon-close-window" width="11px" height="11px">
-                    <use href="./images/icons/icons.svg#icon-close-window"></use>
-                </svg>
-            </button>
-            <form class="form js-speaker-form">
-                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-                <div class="form-field">
-                    <label for="name" class="form-label">Имя</label>
-                    <input class="form-input" type="text" name="user-name" id="name">
-                </div>
-                <div class="form-field">
-                    <label for="name" class="form-label">Телефон</label>
-                    <input class="form-input" type="tel" name="user-tel" id="tel">
-                </div>
-                <div class="form-field">
-                    <label for="name" class="form-label">Почта</label>
-                    <input class="form-input" type="email" name="user-email" id="email">
-                </div>
-                <div class="form-field">
-                    <label for="comment" class="form-label">Комментарий</label>
-                    <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
-                </div>
-            
-                <div class="policy-check">
-                    <input type="checkbox" name="check" id="policy">
-                    <label for="policy">Соглашаюсь с рассылкой и принимаю <span class="policy-link" href="#">Условия договора</span></label>
-                </div>
-
-                <div class="btn-submit">
-                    <button type="submit" class="button-submit">Отправить</button>
-                </div>
-
-            </form>
+            <div class="modal">
+                <button class="close-window" data-modal-close>
+                    <svg class="icon-close-window" width="11px" height="11px">
+                        <use href="./images/icons/icons.svg#icon-close-window"></use>
+                    </svg>
+                </button>
+                <form class="form js-speaker-form">
+                    <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+                    <div class="form-field">
+                        <label for="name" class="form-label">Имя</label>
+                        <div class="form-field-input">
+                            <input class="form-input" type="text" name="user-name" id="name">
+                            <svg class="form-field-icon" width="18px" height="18px">
+                                <use href="./images/icons/icons.svg#icon-person-black-18dp"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="name" class="form-label">Телефон</label>
+                        <div class="form-field-input">
+                            <input class="form-input" type="tel" name="user-tel" id="tel">
+                            <svg class="form-field-icon" width="18px" height="18px">
+                                <use href="./images/icons/icons.svg#icon-phone-black-18dp"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="name" class="form-label">Почта</label>
+                        <div class="form-field-input">
+                            <input class="form-input" type="email" name="user-email" id="email">
+                            <svg class="form-field-icon" width="18px" height="18px">
+                                <use href="./images/icons/icons.svg#icon-email-black-18dp"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="comment" class="form-label">Комментарий</label>
+                        <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                    </div>
                 
-        </div>
+                    <div class="policy-check">
+                        <input class="checkbox visually-hidden" type="checkbox" name="check" id="policy">
+                            <svg class="check-icon" width="16px" height="15px">
+                                <use href="./images/icons/icons.svg#icon-checkbox-empty"></use>
+                            </svg>
+                            <svg class="checked-icon" width="16px" height="15px">
+                                <use href="./images/icons/icons.svg#icon-icon-check"></use>
+                            </svg>
+                
+                        <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#"><span class="policy-link">Условия договора</span>
+                        </a></label>
+                    </div>
+
+                    <div class="btn-submit">
+                        <button type="submit" class="button-submit">Отправить</button>
+                    </div>
+                </form>     
+            </div>
       </div>
 
     <script src="./js/modal.js"></script>
