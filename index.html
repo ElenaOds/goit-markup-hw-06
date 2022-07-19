@@ -409,19 +409,17 @@
                     </div>
                     <div class="form-field">
                         <label for="comment" class="form-label">Комментарий</label>
-                        <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
                     </div>
                 
                     <div class="policy-check">
-                        <input class="checkbox visually-hidden" type="checkbox" name="check" id="policy">
-                            <svg class="check-icon" width="16px" height="15px">
-                                <use href="./images/icons/icons.svg#icon-checkbox-empty"></use>
-                            </svg>
-                            <svg class="checked-icon" width="16px" height="15px">
-                                <use href="./images/icons/icons.svg#icon-icon-check"></use>
-                            </svg>
-                
-                        <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#"><span class="policy-link">Условия договора</span>
+                        <div class="policy-checkbox">
+                                <input class="checkbox-input visually-hidden" type="checkbox" name="check" id="policy">
+                                <svg class="checked-icon" width="16px" height="15px">
+                                    <use href="./images/icons/icons.svg#icon-icon-check"></use>
+                                </svg>
+                        </div>
+                        <label class="policy-check-label" for="policy">Соглашаюсь с рассылкой и принимаю <a href="#" class="policy-link"><span>Условия договора</span>
                         </a></label>
                     </div>
 
